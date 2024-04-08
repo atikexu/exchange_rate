@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: challenge
+  datasource:
+    url: jdbc:h2:mem:exchangedb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: alan
+    password: alan
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8099
